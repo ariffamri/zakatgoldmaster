@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/zakat"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/zakat"
+        android:supportsRtl="true"
+        android:theme="@style/Base.Theme.Assignment"
+        tools:targetApi="31">
+        <activity
+            android:name=".About_activity"
+            android:exported="false" />
+        <!-- Set Home_page as the main (launcher) activity -->
+        <activity
+            android:name=".Home_page"
+            android:exported="true"> <!-- Set exported to true -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- Other activities -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false">
+
+            <!-- Intent-filter removed -->
+        </activity>
+        <activity android:name=".ResultActivity" />
+    </application>
+
+</manifest>

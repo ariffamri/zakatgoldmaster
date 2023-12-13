@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".About_activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/about_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:backgroundTint="@color/secondary"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="47dp"
+            android:layout_gravity="center"
+            android:text="\nThe Developer"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="247dp"
+            android:layout_height="230dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/pic" />
+
+        <TextView
+            android:id="@+id/text_about_details"
+            android:layout_width="295dp"
+            android:layout_height="259dp"
+            android:text="Name:\nMuhammad Ariff Amri Bin Md Zaini\n\nGroup:\nRCS2405A\n\nStudent Num:\n2021609612\n\nProgramme Code:\nCS240"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:layout_gravity="center" />
+
+
+        <TextView
+            android:id="@+id/textViewInfo"
+            android:layout_width="340dp"
+            android:layout_height="58dp"
+            android:layout_gravity="center"
+            android:gravity="fill_vertical|center_horizontal"
+            android:text="\nApplication Information:"
+            android:textColor="@android:color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="340dp"
+            android:layout_height="277dp"
+            android:layout_gravity="center"
+            android:gravity="fill_vertical|center_horizontal"
+            android:text="Zakat Gold Master serves as a dedicated tool for adherents of Islam to easily compute Zakat on their gold assets. The app streamlines the process by allowing users to input the weight and value of their gold, specifying its purpose (kept or for wear), and promptly generating Zakat calculations. This facilitates adherence to Islamic financial principles, providing a convenient and efficient solution for individuals looking to fulfill their religious obligations regarding wealth purification."
+            android:textColor="@android:color/black"
+            android:textSize="18dp" />
+
+
+        <TextView
+            android:id="@+id/website_link"
+            android:layout_width="357dp"
+            android:layout_height="74dp"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="\nClick here to visit Zakat Gold Master Website"
+            android:textColor="@color/holo_blue_light"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textViewCopyright"
+            android:layout_width="310dp"
+            android:layout_height="24dp"
+            android:text="Copyright © 2023 Zakat Gold Master"
+            android:textSize="18sp"
+            android:layout_gravity="center" />
+    </LinearLayout>
+</ScrollView>
